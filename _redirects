@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://affectionate-darwin-3624b4.netlify.com/* http://www.alinasview.xyz/:splat 301!
