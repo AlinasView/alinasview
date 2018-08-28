@@ -1,0 +1,240 @@
+
+/* Header */
+header h1 {
+    font-family: 'Sacramento', cursive;
+    margin: 1.5rem;
+}
+
+/* Nav */
+.navbar-brand{
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+}
+
+nav .navbar-brand {
+    max-width:0;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-size: 36px;
+}
+.fixed-nav nav .navbar-brand{
+    max-width:500px;
+}
+
+/* Main */
+.container{
+    margin-top: 15px;
+}
+.btn-outline-toggle,
+.btn-outline-primary {
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border-color: black;
+}
+.btn-outline-toggle:hover,
+.btn-outline-primary:hover{
+    color: black;
+    background-color: #a0f6e3;
+    background-image: none;
+    border-color: #a0f6e3;
+}
+
+/* Main - AboutMe*/
+#aboutMe #more_text,
+#aboutMe .show_less{
+    display: none;
+}
+
+/* Main - MyBlog*/
+.site-wrap {
+    max-width: 700px;
+    margin: 30px auto;
+    background:white;
+    padding: 40px;
+    text-align: justify;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+/* Main - BlogOverview*/
+.card{
+    /* height:20rem;*/
+}
+.card-img-top{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+}
+.card-text {
+    opacity: 0;
+    /*    position: absolute;*/
+    overflow: hidden;
+    /*  padding: 20px;
+    top: 20px;*/
+    border-radius: 2px;
+    transition: all 0.5s;
+    /*  transform: translateY(100px);*/
+    will-change: opacity;
+    /*display: none;*/
+}
+.card-text:hover {
+    opacity: 1;
+    /*display: block;*/
+}
+
+/* Main - Panel Gallery
+html {
+    box-sizing: border-box;
+    background:#ffc600;
+    font-family:'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+}
+body {
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.panels {
+    min-height:100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background:#6B0F9C;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+    color:white;
+    text-align: center;
+    align-items:center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+  /*  transition:
+            font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            background 0.2s;
+    font-size: 20px;
+    background-size:cover;
+    background-position:center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+*/
+/* Flex Items *//*
+.panel > * {
+    margin:0;
+    width: 100%;
+    transition:transform 0.5s;
+    flex: 1 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.open-active > *:last-child { transform: translateY(0); }
+
+.panel p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+}
+.panel p:nth-child(2) {
+    font-size: 4em;
+}
+
+.panel.open {
+    flex: 5;
+    font-size:40px;
+}
+*/
+/*
+.grid-item {
+  width: 200px;
+  border: 1px solid magenta;
+}
+.grid-item--width2 {
+  width: 400px;
+  border: 1px solid magenta;
+}*//*
+.panel.container {
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.inner {
+  transform: rotate(0);
+  margin: 0 auto;
+  background-color: #fff;
+  width: 400px;
+  height: 220px;
+  box-shadow: 5px 5px 20px;
+  cursor: pointer;
+  perspective: 400px;
+  overflow: hidden;
+}
+
+.inner:hover {
+  animation: hover 1s forwards;
+}
+
+.image {
+  height: 220px;
+  width: 420px;
+  background: url("https://i1.wp.com/thegrandshuckett.com/wp-content/uploads/2018/06/Ant-Man-and-the-Wasp.jpg?fit=940%2C400");
+  background-size: 100% 100%;
+  margin: 0px auto;
+}
+
+.image:hover {
+  animation: hover_image 1s forwards;
+}
+
+.info {
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 0px 20px;
+}
+
+@keyframes hover {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(-20deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    width: 420px;
+    height: 440px;
+  }
+}
+
+@keyframes hover_image {
+  100% {
+    width: 380px;
+    margin-top: 20px;
+  }
+}
+*/
