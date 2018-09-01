@@ -1,6 +1,6 @@
 
 /* Header */
-header h1 {
+header h1, h2 {
     font-family: 'Sacramento', cursive;
     margin: 1.5rem;
 }
