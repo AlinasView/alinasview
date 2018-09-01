@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio Page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="text-center">
@@ -15,7 +17,8 @@
 <nav id="main-nav" class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #a0f6e3;">
     <!--17a2b8 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">-->
     <div class="navbar-brand">alinas.view</div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,83 +38,55 @@
         </ul>
     </div>
 </nav>
-<!--
-  <header>
-<h1>A story about getting lost.</h1>
-</header>
-  <nav id="main">
-<ul>
-  <li class="logo"><a href="#">LOST.</a></li>
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Images</a></li>
-  <li><a href="#">Locations</a></li>
-  <li><a href="#">Maps</a></li>
-</ul>
-</nav>-->
 <main role="main">
     <div class="jumbotron">
         <div class="container text-center" id="aboutMe">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>My name is Alina and I'm a Software and Web Developer from Germany.
-              I started as a backend developer but now I’m working as a frontend developer. I love HTML, CSS, Javascript and Angular.</p>
-             <p>   I started this page as some kind of information platform for beginners and tech interested people. I'd like to share my experience and start into the tech industry and I want to help others with their step into this industry.
-                So I share some resources that help me to improve my coding skills everyday and I think they might be helpful to others as well.</p>
+
+            <h2 class="display-3">Hello, world!</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p> My name is Alina and I'm a Software and Web Developer from Germany.<br>
+                        I started working as a backend developer but now I’m working as a frontend developer.<br>
+                        I love HTML, CSS, Javascript and Angular.</p>
+                    <p> This page is an information platform for beginners and tech interested people.<br>
+                        I'd like to share my
+                        experience and start into the tech industry and I try to help others with their step into this
+                        industry.<br>
+                        You can find some resources that help me to improve my coding skills everyday like
+                        recommendations on
+                        online courses, books, tools, ...</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="rounded img-fluid" src="img/alinasview_me.jpg" alt="Alinas portait">
+                </div>
+            </div>
+
             <div id="more_text">
+                <br>
                 <p><strong>How did I get into tech?</strong></p>
-                 <p>   I have always been interested with computers, video games and web design. The first time I got in touch with programming and stuff was on the first social media platforms like myspace and chat rooms where you were able to create individual pages with plain HTML and inline CSS styling.
-                    Although I chose another path after school and studied Event & Tourism Management. After my studies I started new and came back and I started an internship and an apprenticeship afterwards in the IT department of the company I’m still working at. Beside that I also started to study Computer Science beside my daily full-time job.
-                    Like I mentioned before I started as a backend developer learning C# and Java. During my apprenticeship I also had the chance to learn the basics of web development including HTML, CSS and Javascript.
-                    At the beginning of this year I joined an Angular in five days course and I immediately fell in love with it.</p>
+                <p> I have always been interested with computers, video games and web design.<br>
+                    The first time I got in touch with programming was on social media platforms like myspace and chat
+                    rooms
+                    where you were able to create individual pages with plain HTML and inline CSS styling.<br>
+                    Although I chose another path after school and studied Event & Tourism Management. I found my way
+                    (back) into the tech industry.<br>
+                    After my studies I started new and began an internship and an apprenticeship afterwards in the IT
+                    department of the company
+                    I’m still working at.<br> During that time I also started to study Computer Science beside my daily
+                    full-time job.
+                    Like I mentioned before I started as a backend developer learning C# and Java.<br>
+                    At the end of my apprenticeship I also had the chance to learn the basics of web development
+                    including HTML, CSS and Javascript.<br>
+                    At the beginning of this year I joined an Angular in five days course and I immediately fell in love
+                    with it. </p>
             </div>
-            <p><a class="btn btn-outline-toggle btn-lg show_more" role="button" onclick="toggle_show('more_text');">Learn more &raquo;</a></p>
-            <p><a class="btn btn-outline-toggle btn-lg show_less" role="button" onclick="toggle_hide('more_text');">Learn less &raquo;</a></p>
+            <p><a class="btn btn-outline-toggle btn-lg show_more mt-4" role="button" onclick="toggle_show('more_text');">Learn
+                more &raquo;</a></p>
+            <p><a class="btn btn-outline-toggle btn-lg show_less mt-4" role="button" onclick="toggle_hide('more_text');">Learn
+                less &raquo;</a></p>
         </div>
-
-       <!-- <div class="container" id="myGallery">
-            <div class="panels">
-                <div class="panel panel1">
-                    <p>Hey</p>
-                    <p>Let's</p>
-                    <p>Dance</p>
-                </div>
-                <div class="panel panel2">
-                    <p>Give</p>
-                    <p>Take</p>
-                    <p>Receive</p>
-                </div>
-                <div class="panel panel3">
-                    <p>Experience</p>
-                    <p>It</p>
-                    <p>Today</p>
-                </div>
-                <div class="panel panel4">
-                    <p>Give</p>
-                    <p>All</p>
-                    <p>You can</p>
-                </div>
-                <div class="panel panel5">
-                    <p>Life</p>
-                    <p>In</p>
-                    <p>Motion</p>
-                </div>
-            </div>
-        </div>-->
     </div>
 
-    <!--    <div class="panel container">
-    <div class="inner">
-      <div class="image">
-      </div>
-      <div class="info">
-        <p>
-          From the Marvel Cinematic Universe comes a new chapter featuring heroes with the astonishing ability to shrink: "Ant-Man and The Wasp." In the aftermath of "Captain America: Civil War," Scott Lang (Rudd) grapples with the consequences of his choices as
-          both a Super Hero and a father. As he struggles to rebalance his home life with his responsibilities as Ant-Man, he's confronted by Hope van Dyne (Lilly) and Dr. Hank Pym (Douglas) with an urgent new mission. Scott must once again put on the suit
-          and learn to fight alongside The Wasp as the team works together to uncover secrets from their past.
-        </p>
-      </div>
-    </div>
-  </div>-->
 
     <div class="container" id="myBlog">
         <h3 class="text-center">
@@ -119,57 +94,119 @@
             <small class="text-muted">With faded secondary text</small>
         </h3>
         <div class="site-wrap">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-            <p> at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas consequatur doloremque quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem. Tempora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus consequatur debitis nesciunt tempore officiis aperiam quisquam, molestiae voluptates cum, fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur quidem ullam beatae architecto, ipsam sequi officiis dignissimos amet impedit natus necessitatibus tenetur repellendus dolor rem! Dicta dolorem, iure, facilis illo ex nihil ipsa amet officia, optio temporibus eum autem odit repellendus nisi. Possimus modi, corrupti error debitis doloribus dicta libero earum, sequi porro ut excepturi nostrum ea voluptatem nihil culpa? Ullam expedita eligendi obcaecati reiciendis velit provident omnis quas qui in corrupti est dolore facere ad hic, animi soluta assumenda consequuntur reprehenderit! Voluptate dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam consectetur, corrupti, sequi et consequuntur, excepturi doloremque. Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, inventore, aspernatur. Accusantium modi atque, asperiores qui nobis soluta cumque suscipit excepturi possimus doloremque odit saepe perferendis temporibus molestiae nostrum voluptatum quis id sint quidem nesciunt culpa. Rerum labore dolor beatae blanditiis praesentium explicabo velit optio esse aperiam similique, voluptatem cum, maiores ipsa tempore. Reiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto alias vitae explicabo nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi. Enim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam error sint, libero. Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis itaque, placeat veniam ad nisi. Expedita, laborum reprehenderit ratione soluta velit natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum, excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati officiis quo, ratione eveniet, provident pariatur. Veniam quasi expedita distinctio, itaque molestiae sequi, dolorum nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio nihil? Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit excepturi voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet, facere ducimus accusantium eos veritatis neque.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi. Enim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam error sint, libero. Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis itaque, placeat veniam ad nisi. Expedita, laborum reprehenderit ratione soluta velit natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum, excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati officiis quo, ratione eveniet, provident pariatur. Veniam quasi expedita distinctio, itaque molestiae sequi, dolorum nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio nihil? Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit excepturi voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet, facere ducimus accusantium eos veritatis neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+                omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores
+                sunt esse magni, ut, dignissimos.</p>
+            <p> at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad
+                error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta
+                consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas
+                consequatur doloremque quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui
+                aspernatur ea eaque adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio
+                harum, officia ab nihil exercitationem. Tempora rem nemo nam temporibus molestias facilis minus ipsam
+                quam doloribus consequatur debitis nesciunt tempore officiis aperiam quisquam, molestiae voluptates cum,
+                fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur quidem
+                ullam beatae architecto, ipsam sequi officiis dignissimos amet impedit natus necessitatibus tenetur
+                repellendus dolor rem! Dicta dolorem, iure, facilis illo ex nihil ipsa amet officia, optio temporibus
+                eum autem odit repellendus nisi. Possimus modi, corrupti error debitis doloribus dicta libero earum,
+                sequi porro ut excepturi nostrum ea voluptatem nihil culpa? Ullam expedita eligendi obcaecati reiciendis
+                velit provident omnis quas qui in corrupti est dolore facere ad hic, animi soluta assumenda consequuntur
+                reprehenderit! Voluptate dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam
+                consectetur, corrupti, sequi et consequuntur, excepturi doloremque. Tempore quis velit corporis neque
+                fugit non sequi eaque rem hic. Facere, inventore, aspernatur. Accusantium modi atque, asperiores qui
+                nobis soluta cumque suscipit excepturi possimus doloremque odit saepe perferendis temporibus molestiae
+                nostrum voluptatum quis id sint quidem nesciunt culpa. Rerum labore dolor beatae blanditiis praesentium
+                explicabo velit optio esse aperiam similique, voluptatem cum, maiores ipsa tempore. Reiciendis sed culpa
+                atque inventore, nam ullam enim expedita consectetur id velit iusto alias vitae explicabo nemo neque
+                odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta
+                quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam
+                repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur
+                nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus doloremque
+                possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt
+                laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita
+                dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione
+                consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel
+                non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate
+                commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa
+                reiciendis tempore excepturi. Enim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam
+                error sint, libero. Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque,
+                voluptate veritatis itaque, placeat veniam ad nisi. Expedita, laborum reprehenderit ratione soluta velit
+                natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex,
+                quas, amet ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa
+                debitis voluptatem harum, excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro
+                saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati
+                officiis quo, ratione eveniet, provident pariatur. Veniam quasi expedita distinctio, itaque molestiae
+                sequi, dolorum nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil,
+                perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus distinctio molestias eum,
+                quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio nihil?
+                Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit excepturi
+                voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! Tempore
+                non magnam, amet, facere ducimus accusantium eos veritatis neque.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam
+                repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur
+                nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus doloremque
+                possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt
+                laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita
+                dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione
+                consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel
+                non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate
+                commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa
+                reiciendis tempore excepturi. Enim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam
+                error sint, libero. Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque,
+                voluptate veritatis itaque, placeat veniam ad nisi. Expedita, laborum reprehenderit ratione soluta velit
+                natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex,
+                quas, amet ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa
+                debitis voluptatem harum, excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro
+                saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati
+                officiis quo, ratione eveniet, provident pariatur. Veniam quasi expedita distinctio, itaque molestiae
+                sequi, dolorum nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil,
+                perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus distinctio molestias eum,
+                quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio nihil?
+                Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit excepturi
+                voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! Tempore
+                non magnam, amet, facere ducimus accusantium eos veritatis neque.</p>
         </div>
     </div>
-    <!-- Masonry
-    <div class="container-fluid">
-<div class="grid">
-  <div class="grid-sizer col-xs-6 col-sm-4 col-md-3"></div>
-  <div class="grid-item col-xs-6 col-sm-4 col-md-3">
-    <div class="grid-item-content">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BmEE_0DBRxR/?utm_source=ig_embed" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmEE_0DBRxR/?utm_source=ig_embed" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von Alina • Coding Lifestyle (@alinas.view)</a> am <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-08-04T16:29:51+00:00">Aug 4, 2018 um 9:29 PDT</time></p></div></blockquote>
-<script async defer src="//www.instagram.com/embed.js"></script>
-        </div>
-  </div>
 
-  <div class="grid-item col-xs-6 col-sm-4 col-md-3">
-    <div class="grid-item-content"> <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BmYrH25Bk7E/?utm_source=ig_embed" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmYrH25Bk7E/?utm_source=ig_embed" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von Alina • Coding Lifestyle (@alinas.view)</a> am <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-08-12T16:27:48+00:00">Aug 12, 2018 um 9:27 PDT</time></p></div></blockquote>
-<script async defer src="//www.instagram.com/embed.js"></script>
-       </div>
-  </div>
-
-  <div class="grid-item col-xs-6 col-sm-4 col-md-3">
-    <div class="grid-item-content">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BmEE_0DBRxR/?utm_source=ig_embed" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmEE_0DBRxR/?utm_source=ig_embed" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von Alina • Coding Lifestyle (@alinas.view)</a> am <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-08-04T16:29:51+00:00">Aug 4, 2018 um 9:29 PDT</time></p></div></blockquote>
-<script async defer src="//www.instagram.com/embed.js"></script>
-        </div>
-  </div>
-
-  <div class="grid-item col-xs-6 col-sm-4 col-md-3">
-    <div class="grid-item-content"> <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BmYrH25Bk7E/?utm_source=ig_embed" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmYrH25Bk7E/?utm_source=ig_embed" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von Alina • Coding Lifestyle (@alinas.view)</a> am <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-08-12T16:27:48+00:00">Aug 12, 2018 um 9:27 PDT</time></p></div></blockquote>
-<script async defer src="//www.instagram.com/embed.js"></script>
-       </div>
-  </div>
-</div>
-</div>
--->
     <div class="container text-center" id="blogOverview">
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/300x180/a0f6e3/ffffff" alt="Card image cap">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x180/a0f6e3/ffffff"
+                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -179,7 +216,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/300x180/E8117F/ffffff" alt="Card image cap">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x180/E8117F/ffffff"
+                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -200,7 +238,9 @@
                 <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
               </span>
                 <p>Check out my Linkedin profile!</p>
-                <p><a class="btn btn-outline-dark" href="#" role="button">View details &raquo;</a></p>
+                <p>
+                <div class="btn btn-outline-dark" role="button">Link is coming soon &raquo;</div>
+                </p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-2x">
@@ -208,7 +248,8 @@
                 <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
               </span>
                 <p>Check out my Instagram profile!</p>
-                <p><a class="btn btn-outline-dark" href="#" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-outline-dark" href="https://www.instagram.com/alinas.view/" role="button">View
+                    details &raquo;</a></p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-2x">
@@ -216,7 +257,8 @@
                 <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
               </span>
                 <p>Write me an email!</p>
-                <p><a class="btn btn-outline-dark" href="#" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-outline-dark" href="mailto:alina.the.view@gmail.com" role="button">View details
+                    &raquo;</a></p>
             </div>
         </div>
 
@@ -227,12 +269,14 @@
 </main>
 <footer class="container">
     <p>&copy; Alina 2018</p>
+    <!-- TODO back to top -->
 </footer>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
+
