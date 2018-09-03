@@ -64,6 +64,10 @@ nav .navbar-brand {
     transform: scale(0.98);
     transition: transform 0.5s;
 }
+.blog-signing{
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+}
 
 /* Main - BlogOverview*/
 .card{
