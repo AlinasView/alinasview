@@ -96,6 +96,11 @@ nav .navbar-brand {
     /*display: block;*/
 }
 
+/*Contact*/
+.fa-stack {
+    margin-bottom: 10px;
+}
+
 /* Main - Panel Gallery
 html {
     box-sizing: border-box;
