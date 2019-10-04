@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /*Links*/
 main a,
 footer a{
@@ -99,6 +103,25 @@ nav .navbar-brand {
 /*Contact*/
 .fa-stack {
     margin-bottom: 10px;
+}
+
+/*Footer*/
+.c-to-top {
+    position: fixed;
+    width: 62px;
+    height: 70px;
+    right: 70px;
+    bottom: 0;
+    z-index: 99;
+    overflow: visible;
+}
+
+.c-to-top__link {
+    display: inline-block;
+}
+
+.c-to-top__link:hover {
+    text-decoration: none;
 }
 
 /* Main - Panel Gallery
