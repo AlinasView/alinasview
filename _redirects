@@ -1,5 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
 http://affectionate-darwin-3624b4.netlify.com/* http://www.alinasview.xyz/:splat 301!
 # new Redirect
-https://www.alinasview.xyz/beginners-guide-four-advices https://www.alinasview.xyz/beginners_guide_four_advices.html
-https://www.alinasview.xyz/coding-resources https://www.alinasview.xyz#myBlog
+https://www.alinasview.xyz/beginners-guide-four-advices https://www.alinasview.xyz/blog.html#myBlog1
+https://www.alinasview.xyz/coding-resources https://www.alinasview.xyz/blog.html#myBlog2

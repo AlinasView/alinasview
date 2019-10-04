@@ -4,10 +4,17 @@ html {
 
 /*Links*/
 main a,
-footer a{
+footer a {
     color: #444;
     /*font-weight: bold;*/
     border-bottom: 1px solid #dcdcdc;
+}
+
+main a:hover,
+footer a:hover {
+    color: #444;
+    border-bottom: 0;
+    text-decoration: none;
 }
 
 /* Header */
@@ -17,25 +24,39 @@ header h1, h2 {
 }
 
 /* Nav */
-.navbar-brand{
+.navbar-brand {
     font-family: 'Sacramento', cursive;
     font-size: 36px;
 }
 
 nav .navbar-brand {
-    max-width:0;
+    max-width: 0;
     overflow: hidden;
     transition: all 0.5s;
     font-size: 36px;
 }
-.fixed-nav nav .navbar-brand{
-    max-width:500px;
+
+nav .navbar-brand a {
+    color: #000;
+    text-decoration: none;
+}
+
+.fixed-nav nav .navbar-brand {
+    max-width: 500px;
+}
+
+nav .navbar-brand a:hover,
+nav .navbar-brand a:active,
+nav .navbar-brand a:focus {
+    color: black;
+    text-decoration: underline;
 }
 
 /* Main */
-.container{
+.container {
     margin-top: 15px;
 }
+
 .btn-outline-toggle,
 .btn-outline-primary {
     color: black;
@@ -43,8 +64,9 @@ nav .navbar-brand {
     background-image: none;
     border-color: black;
 }
+
 .btn-outline-toggle:hover,
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     color: black;
     background-color: #a0f6e3;
     background-image: none;
@@ -53,7 +75,7 @@ nav .navbar-brand {
 
 /* Main - AboutMe*/
 #aboutMe #more_text,
-#aboutMe .show_less{
+#aboutMe .show_less {
     display: none;
 }
 
@@ -61,28 +83,31 @@ nav .navbar-brand {
 .site-wrap {
     max-width: 700px;
     margin: 30px auto;
-    background:white;
+    background: white;
     padding: 40px;
     text-align: justify;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     transform: scale(0.98);
     transition: transform 0.5s;
 }
-.blog-signing{
+
+.blog-signing {
     font-family: 'Sacramento', cursive;
     font-size: 36px;
 }
 
 /* Main - BlogOverview*/
-.card{
+.card {
     /* height:20rem;*/
 }
-.card-img-top{
-    width:50%;
+
+.card-img-top {
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top:10px;
+    padding-top: 10px;
 }
+
 .card-text {
     opacity: 0;
     /*    position: absolute;*/
@@ -95,6 +120,7 @@ nav .navbar-brand {
     will-change: opacity;
     /*display: none;*/
 }
+
 .card-text:hover {
     opacity: 1;
     /*display: block;*/
@@ -105,12 +131,21 @@ nav .navbar-brand {
     margin-bottom: 10px;
 }
 
+/*List Group*/
+.list-group-flush:last-child .list-group-item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.list-group-flush .list-group-item:first-child {
+    border-top: 0;
+}
+
 /*Footer*/
 .c-to-top {
     position: fixed;
     width: 62px;
     height: 70px;
-    right: 70px;
+    right: 0;
     bottom: 0;
     z-index: 99;
     overflow: visible;
@@ -152,18 +187,18 @@ body {
     text-align: center;
     align-items:center;
     /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
-  /*  transition:
-            font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-            flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-            background 0.2s;
-    font-size: 20px;
-    background-size:cover;
-    background-position:center;
-    flex: 1;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+/* Chrome + FF transitionend event.propertyName === flex-grow */
+/*  transition:
+          font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+          flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+          background 0.2s;
+  font-size: 20px;
+  background-size:cover;
+  background-position:center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
