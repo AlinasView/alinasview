@@ -13,7 +13,7 @@ main a:hover, main a:hover,
 footer a:hover,
 footer a:hover {
   color: #444;
-  border-bottom: 0;
+  border-bottom-color: transparent;
   text-decoration: none;
 }
 
